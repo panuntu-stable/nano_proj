@@ -1,7 +1,6 @@
 #include "config.h"
 #include "uart.h"
 #include <avr/io.h>
-// #include <stdio.h>
 #include <util/delay.h>
 
 #define LED_PIN PIN5_bm

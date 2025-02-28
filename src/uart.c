@@ -1,7 +1,6 @@
 #include "uart.h"
 #include "config.h"
 #include <stdint.h>
-// #include <stdio.h>
 
 void UART_init() {
   PORTMUX.USARTROUTEA = PORTMUX_USART3_DEFAULT_gc;

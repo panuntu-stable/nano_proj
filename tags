@@ -18,7 +18,6 @@ UART_init	src/uart.c	/^void UART_init() {$/;"	f	typeref:typename:void
 UART_sendChar	src/uart.c	/^void UART_sendChar(char c) {$/;"	f	typeref:typename:void
 UART_sendString	src/uart.c	/^void UART_sendString(const char *str) {$/;"	f	typeref:typename:void
 board	platformio.ini	/^board = nano_every$/;"	k	section:env:nano_every
-build_flags	platformio.ini	/^build_flags = -mmcu=atmega4809$/;"	k	section:env:nano_every
 env:nano_every	platformio.ini	/^[env:nano_every]$/;"	s
 framework	platformio.ini	/^framework = arduino$/;"	k	section:env:nano_every
 main	src/main.c	/^int main() {$/;"	f	typeref:typename:int
