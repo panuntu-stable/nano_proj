@@ -10,7 +10,7 @@ void UART_init() {
 
   PORTD.DIRSET = PIN0_bm;
   PORTD.DIRCLR = PIN1_bm;
-  USART3.BAUD = (uint16_t)((F_CPU) / (6 * BAUD_RATE));
+  USART3.BAUD = (uint16_t)((F_CPU * 64) / (16 * BAUD_RATE));
   USART3.CTRLB |= USART_TXEN_bm;
 }
 
