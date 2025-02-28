@@ -24,4 +24,5 @@ framework	platformio.ini	/^framework = arduino$/;"	k	section:env:nano_every
 main	src/main.c	/^int main() {$/;"	f	typeref:typename:int
 monitor_speed	platformio.ini	/^monitor_speed = 115200$/;"	k	section:env:nano_every
 platform	platformio.ini	/^platform = atmelmegaavr$/;"	k	section:env:nano_every
+setup_clock_16mhz	src/main.c	/^void setup_clock_16mhz() { _PROTECTED_WRITE(CLKCTRL.MCLKCTRLB, 0x00); }$/;"	f	typeref:typename:void
 upload_protocol	platformio.ini	/^upload_protocol = jtag2updi$/;"	k	section:env:nano_every
