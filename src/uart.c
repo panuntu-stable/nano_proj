@@ -1,6 +1,8 @@
 #include "uart.h"
 #include "config.h"
+#include <stddef.h>
 #include <stdint.h>
+#include <string.h>
 
 void UART_init() {
   PORTMUX.USARTROUTEA = PORTMUX_USART3_DEFAULT_gc;
@@ -21,10 +23,7 @@ void UART_sendChar(char c) {
 }
 
 void UART_sendString(const char *str) {
-  // for (; *str != '\0'; str++) {
-  //  UART_sendChar(*str++);
-  while (*str) {
-    UART_sendChar(*str);
-    str++;
+  for (size_t i = 0; i < strlen(str); i++) {
+    UART_sendChar(str[i]);
   }
 }
